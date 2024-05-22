@@ -1,0 +1,179 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+header {
+    background-color: #004080;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    transition: background-color 0.3s;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 500;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+.language-switcher, .theme-switcher {
+    position: absolute;
+    top: 20px;
+}
+.language-switcher {
+    right: 20px;
+}
+.theme-switcher {
+    left: 20px;
+}
+button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #eee;
+}
+button#theme-toggle {
+    background-color: #004080;
+    color: #fff;
+    border: none;
+}
+button#theme-toggle:hover {
+    background-color: #003366;
+}
+.cv-button {
+    margin-top: 20px;
+}
+.cv-button a {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+.cv-button a:hover {
+    background-color: #003366;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #002b55;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+nav a {
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+nav a:hover {
+    background-color: #003366;
+}
+section {
+    padding: 60px 20px;
+    margin: 10px 0;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 1s forwards;
+}
+body.dark-mode .container {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+h2 {
+    color: #004080;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    margin: 10px 0;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-info div {
+    flex: 1;
+    text-align: center;
+    margin: 10px 0;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #002b55;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+.skills, .experience, .education, .certificates {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skills div, .experience div, .education div, .certificates div {
+    flex: 0 0 48%;
+    margin: 10px 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
