@@ -1,0 +1,20 @@
+{
+  "name": "egetezel.github.io",
+  "version": "1.0.0",
+  "description": "WhatsApp Web medya indirme otomasyonu ve statik site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "whatsapp:run": "node automation/whatsapp_downloader.js",
+    "whatsapp:schedule": "node automation/whatsapp_downloader.js --schedule"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "node-cron": "^3.0.3",
+    "playwright": "^1.48.0",
+    "sqlite3": "^5.1.7"
+  }
+}

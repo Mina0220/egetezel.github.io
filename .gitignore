@@ -1,0 +1,9 @@
+node_modules/
+downloads/
+secrets/
+.env
+npm-debug.log*
+playwright-report/
+storage/
+automation/*.log
+automation/*.db
