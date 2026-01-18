@@ -1,147 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ege Tezel - Civil Engineer</title>
+    <title>NB Danışmanlık | TÜBİTAK & KOSGEB Teşvik Danışmanlığı</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="theme-switcher">
-            <button id="theme-toggle">🌙</button>
+    <header class="hero">
+        <div class="top-bar">
+            <div class="theme-switcher">
+                <button id="theme-toggle" aria-label="Tema değiştir">🌙</button>
+            </div>
+            <div class="language-switcher">
+                <button id="tr-btn" class="active">Türkçe</button>
+                <button id="en-btn">English</button>
+            </div>
         </div>
-        <div class="language-switcher">
-            <button id="en-btn">English</button>
-            <button id="tr-btn">Türkçe</button>
-        </div>
-        <h1 data-en="Ege Tezel" data-tr="Ege Tezel">Ege Tezel</h1>
-        <p data-en="Civil Engineer | Data Analyst | Problem Solver" data-tr="İnşaat Mühendisi | Veri Analisti | Sorun Çözücü">Civil Engineer | Data Analyst | Problem Solver</p>
-        <div class="cv-button">
-            <a href="https://drive.google.com/file/d/1X1aPw2s-taipkNuM7kl3lbV_hpCya-ol/view?usp=sharing" target="_blank" id="cv-link" data-en="View CV" data-tr="CV Görüntüle">View CV</a>
+        <div class="hero-content">
+            <span class="badge" data-en="Grant Consulting" data-tr="Teşvik Danışmanlığı">Teşvik Danışmanlığı</span>
+            <h1 data-en="NB Consulting" data-tr="NB Danışmanlık">NB Danışmanlık</h1>
+            <p data-en="We help R&D firms, young entrepreneurs, and SMEs secure TÜBİTAK and KOSGEB incentives with end-to-end project consultancy." data-tr="Ar-Ge yapan firmalar, genç girişimciler ve KOBİ’ler için TÜBİTAK ve KOSGEB teşviklerinde uçtan uca danışmanlık sağlıyoruz.">
+                Ar-Ge yapan firmalar, genç girişimciler ve KOBİ’ler için TÜBİTAK ve KOSGEB teşviklerinde uçtan uca danışmanlık sağlıyoruz.
+            </p>
+            <div class="hero-actions">
+                <a class="primary" href="#contact" data-en="Free Pre-Assessment" data-tr="Ücretsiz Ön Değerlendirme">Ücretsiz Ön Değerlendirme</a>
+                <a class="secondary" href="#services" data-en="View Services" data-tr="Hizmetleri İncele">Hizmetleri İncele</a>
+            </div>
+            <div class="hero-stats">
+                <div>
+                    <strong data-en="End-to-end support" data-tr="Uçtan uca destek">Uçtan uca destek</strong>
+                    <span data-en="From eligibility to reporting" data-tr="Uygunluktan raporlamaya">Uygunluktan raporlamaya</span>
+                </div>
+                <div>
+                    <strong data-en="Tailored strategy" data-tr="Özel strateji">Özel strateji</strong>
+                    <span data-en="For your sector & call" data-tr="Sektörünüz ve çağrınıza özel">Sektörünüz ve çağrınıza özel</span>
+                </div>
+                <div>
+                    <strong data-en="Fast response" data-tr="Hızlı geri dönüş">Hızlı geri dönüş</strong>
+                    <span data-en="Same-day initial review" data-tr="Aynı gün ön inceleme">Aynı gün ön inceleme</span>
+                </div>
+            </div>
         </div>
     </header>
+
     <nav>
-        <a href="#about" data-en="About Me" data-tr="Hakkımda">About Me</a>
-        <a href="#skills" data-en="Skills" data-tr="Beceriler">Skills</a>
-        <a href="#experience" data-en="Experience" data-tr="Deneyim">Experience</a>
-        <a href="#education" data-en="Education" data-tr="Eğitim">Education</a>
-        <a href="#certificates" data-en="Certificates" data-tr="Sertifikalar">Certificates</a>
-        <a href="#contact" data-en="Contact" data-tr="İletişim">Contact</a>
+        <a href="#about" data-en="About Us" data-tr="Hakkımızda">Hakkımızda</a>
+        <a href="#services" data-en="Services" data-tr="Hizmetler">Hizmetler</a>
+        <a href="#process" data-en="Process" data-tr="Süreç">Süreç</a>
+        <a href="#audiences" data-en="Target Audience" data-tr="Hedef Kitle">Hedef Kitle</a>
+        <a href="#value" data-en="Why NB Consulting" data-tr="Neden NB Danışmanlık">Neden NB Danışmanlık</a>
+        <a href="#contact" data-en="Contact" data-tr="İletişim">İletişim</a>
     </nav>
+
     <section id="about" class="container animate">
-        <h2 data-en="About Me" data-tr="Hakkımda">About Me</h2>
-        <p data-en="I am a dedicated Civil Engineer with a passion for data analysis and problem-solving. With a solid educational foundation and hands-on experience in the construction industry, I bring a unique combination of technical expertise and practical skills. My proficiency in tools like AutoCAD, SAP2000, and Python, along with my ability to conduct root cause analysis, allows me to effectively contribute to project success. I am constantly seeking opportunities to expand my knowledge and make meaningful contributions to the field." data-tr="Veri analizi ve problem çözme konusunda tutkulu, adanmış bir İnşaat Mühendisiyim. Sağlam bir eğitim temeli ve inşaat sektöründe pratik deneyim ile teknik uzmanlık ve pratik becerilerin benzersiz bir kombinasyonunu sunuyorum. AutoCAD, SAP2000 ve Python gibi araçlarda yetkinliğim ve kök neden analizi yapma yeteneğim, projelerin başarısına etkili bir şekilde katkıda bulunmamı sağlar. Bilgimi genişletmek ve alana anlamlı katkılar yapmak için sürekli fırsatlar arıyorum.">I am a dedicated Civil Engineer with a passion for data analysis and problem-solving. With a solid educational foundation and hands-on experience in the construction industry, I bring a unique combination of technical expertise and practical skills. My proficiency in tools like AutoCAD, SAP2000, and Python, along with my ability to conduct root cause analysis, allows me to effectively contribute to project success. I am constantly seeking opportunities to expand my knowledge and make meaningful contributions to the field.</p>
-    </section>
-    <section id="skills" class="container animate">
-        <h2 data-en="Skills" data-tr="Beceriler">Skills</h2>
-        <div class="skills">
-            <div>
-                <h3 data-en="Technical Skills" data-tr="Teknik Beceriler">Technical Skills</h3>
-                <ul>
-                    <li data-en="Root Cause Analysis: Identifying and addressing complex problems in projects." data-tr="Kök Neden Analizi: Projelerdeki karmaşık sorunları belirleme ve ele alma.">Root Cause Analysis: Identifying and addressing complex problems in projects.</li>
-                    <li data-en="AutoCAD & SAP2000: Design and analysis of civil engineering structures." data-tr="AutoCAD & SAP2000: İnşaat mühendisliği yapılarının tasarımı ve analizi.">AutoCAD & SAP2000: Design and analysis of civil engineering structures.</li>
-                    <li data-en="Python: Data manipulation, cleaning, and visualization with Pandas, NumPy, Matplotlib." data-tr="Python: Pandas, NumPy, Matplotlib ile veri manipülasyonu, temizleme ve görselleştirme.">Python: Data manipulation, cleaning, and visualization with Pandas, NumPy, Matplotlib.</li>
-                    <li data-en="Adobe Photoshop: Design and graphics editing." data-tr="Adobe Photoshop: Tasarım ve grafik düzenleme.">Adobe Photoshop: Design and graphics editing.</li>
-                </ul>
+        <div class="section-title">
+            <h2 data-en="About NB Consulting" data-tr="NB Danışmanlık Hakkında">NB Danışmanlık Hakkında</h2>
+            <p data-en="We combine incentive knowledge with project management expertise to turn your innovative ideas into funded projects." data-tr="Teşvik bilgimizi proje yönetimi tecrübemizle birleştiriyor, yenilikçi fikirlerinizi fonlanan projelere dönüştürüyoruz.">
+                Teşvik bilgimizi proje yönetimi tecrübemizle birleştiriyor, yenilikçi fikirlerinizi fonlanan projelere dönüştürüyoruz.
+            </p>
+        </div>
+        <div class="highlight-grid">
+            <div class="highlight-card">
+                <h3 data-en="Strategic Fit" data-tr="Stratejik Uyum">Stratejik Uyum</h3>
+                <p data-en="We map your project to the most suitable TÜBİTAK/KOSGEB calls and maximize eligibility." data-tr="Projenizi en uygun TÜBİTAK/KOSGEB çağrılarıyla eşleştirir, uygunluğu artırırız.">
+                    Projenizi en uygun TÜBİTAK/KOSGEB çağrılarıyla eşleştirir, uygunluğu artırırız.
+                </p>
             </div>
-            <div>
-                <h3 data-en="Software Proficiency" data-tr="Yazılım Yetkinliği">Software Proficiency</h3>
-                <ul>
-                    <li data-en="Microsoft Office: Advanced proficiency in Word, Excel (including VBA), and PowerPoint." data-tr="Microsoft Office: Word, Excel (VBA dahil) ve PowerPoint'te ileri düzeyde yetkinlik.">Microsoft Office: Advanced proficiency in Word, Excel (including VBA), and PowerPoint.</li>
-                    <li data-en="Data Analysis: Using Python for data-driven decision making and presenting findings." data-tr="Veri Analizi: Veriye dayalı karar alma ve bulguları sunmak için Python kullanma.">Data Analysis: Using Python for data-driven decision making and presenting findings.</li>
-                </ul>
+            <div class="highlight-card">
+                <h3 data-en="Funding Story" data-tr="Fon Hikayesi">Fon Hikayesi</h3>
+                <p data-en="We build a clear, measurable project narrative that meets evaluation criteria." data-tr="Değerlendirme kriterlerine uyan, ölçülebilir bir proje hikayesi kurgularız.">
+                    Değerlendirme kriterlerine uyan, ölçülebilir bir proje hikayesi kurgularız.
+                </p>
+            </div>
+            <div class="highlight-card">
+                <h3 data-en="Compliance & Reporting" data-tr="Uyum ve Raporlama">Uyum ve Raporlama</h3>
+                <p data-en="We guide you through budgeting, monitoring, and reporting to keep the grant secure." data-tr="Bütçe, izleme ve raporlama süreçlerinde yanınızda olarak teşviki güvence altına alırız.">
+                    Bütçe, izleme ve raporlama süreçlerinde yanınızda olarak teşviki güvence altına alırız.
+                </p>
             </div>
         </div>
     </section>
-    <section id="experience" class="container animate">
-        <h2 data-en="Experience" data-tr="Deneyim">Experience</h2>
-        <div class="experience">
-            <div>
-                <h3 data-en="AsyaLogic" data-tr="AsyaLogic">AsyaLogic</h3>
-                <p data-en="Data Entry Operator (May 2023 - Sep 2023)" data-tr="Veri Girişi Operatörü (Mayıs 2023 - Eylül 2023)">Data Entry Operator (May 2023 - Sep 2023)</p>
-                <ul>
-                    <li data-en="Entered customer and account data from source documents within time limits." data-tr="Belirli süreler içinde kaynak belgelerden müşteri ve hesap verilerini girdi.">Entered customer and account data from source documents within time limits.</li>
-                    <li data-en="Compiled, verified the accuracy, and sorted information to prepare source data for computer entry." data-tr="Bilgileri derledi, doğruluğunu doğruladı ve bilgisayar girişi için kaynak verileri hazırlamak üzere sıraladı.">Compiled, verified the accuracy, and sorted information to prepare source data for computer entry.</li>
-                </ul>
+
+    <section id="services" class="container alt-section animate">
+        <div class="section-title">
+            <h2 data-en="Our Services" data-tr="Hizmetlerimiz">Hizmetlerimiz</h2>
+            <p data-en="A full-cycle consultancy package designed to increase your success rate." data-tr="Başarı oranınızı artırmak için tasarlanmış tam döngü danışmanlık paketi.">
+                Başarı oranınızı artırmak için tasarlanmış tam döngü danışmanlık paketi.
+            </p>
+        </div>
+        <div class="card-grid">
+            <article class="service-card">
+                <h3 data-en="TÜBİTAK Call Matching" data-tr="TÜBİTAK Çağrı Eşleştirme">TÜBİTAK Çağrı Eşleştirme</h3>
+                <p data-en="Eligibility analysis, roadmap, and call calendar management." data-tr="Uygunluk analizi, yol haritası ve çağrı takvimi yönetimi.">Uygunluk analizi, yol haritası ve çağrı takvimi yönetimi.</p>
+            </article>
+            <article class="service-card">
+                <h3 data-en="KOSGEB Support Consultancy" data-tr="KOSGEB Destek Danışmanlığı">KOSGEB Destek Danışmanlığı</h3>
+                <p data-en="Program selection, application preparation, and monitoring." data-tr="Program seçimi, başvuru hazırlığı ve izleme.">Program seçimi, başvuru hazırlığı ve izleme.</p>
+            </article>
+            <article class="service-card">
+                <h3 data-en="Project Writing & Budgeting" data-tr="Proje Yazımı & Bütçeleme">Proje Yazımı & Bütçeleme</h3>
+                <p data-en="Narrative, work packages, KPI tracking, and budget structure." data-tr="Proje anlatısı, iş paketleri, KPI takibi ve bütçe kurgusu.">Proje anlatısı, iş paketleri, KPI takibi ve bütçe kurgusu.</p>
+            </article>
+            <article class="service-card">
+                <h3 data-en="Monitoring & Reporting" data-tr="İzleme & Raporlama">İzleme & Raporlama</h3>
+                <p data-en="Milestone follow-up, reporting templates, and audit readiness." data-tr="Kilometre taşı takibi, rapor şablonları ve denetime hazırlık.">Kilometre taşı takibi, rapor şablonları ve denetime hazırlık.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="process" class="container animate">
+        <div class="section-title">
+            <h2 data-en="Our Process" data-tr="Çalışma Sürecimiz">Çalışma Sürecimiz</h2>
+            <p data-en="Transparent steps that make every application predictable and measurable." data-tr="Her başvuruyu öngörülebilir ve ölçülebilir kılan şeffaf adımlar.">Her başvuruyu öngörülebilir ve ölçülebilir kılan şeffaf adımlar.</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-step">
+                <span>01</span>
+                <h3 data-en="Pre-Assessment" data-tr="Ön Değerlendirme">Ön Değerlendirme</h3>
+                <p data-en="We review your idea, team, and readiness within 24 hours." data-tr="Fikrinizi, ekibinizi ve uygunluğu 24 saat içinde analiz ederiz.">Fikrinizi, ekibinizi ve uygunluğu 24 saat içinde analiz ederiz.</p>
             </div>
-            <div>
-                <h3 data-en="AKGÜLER YAPI İNŞAAT SAN. VE TİC. A.Ş" data-tr="AKGÜLER YAPI İNŞAAT SAN. VE TİC. A.Ş">AKGÜLER YAPI İNŞAAT SAN. VE TİC. A.Ş</h3>
-                <p data-en="Civil Engineer Intern (Jun 2018 - Sep 2018)" data-tr="İnşaat Mühendisi Stajyeri (Haziran 2018 - Eylül 2018)">Civil Engineer Intern (Jun 2018 - Sep 2018)</p>
-                <ul>
-                    <li data-en="Gained hands-on experience working on a construction site." data-tr="Bir inşaat sahasında çalışarak pratik deneyim kazandı.">Gained hands-on experience working on a construction site.</li>
-                    <li data-en="Developed skills in making decisions under pressure." data-tr="Baskı altında karar verme becerilerini geliştirdi.">Developed skills in making decisions under pressure.</li>
-                </ul>
+            <div class="timeline-step">
+                <span>02</span>
+                <h3 data-en="Call & Budget Strategy" data-tr="Çağrı & Bütçe Stratejisi">Çağrı & Bütçe Stratejisi</h3>
+                <p data-en="We select the best incentive program and build the grant budget." data-tr="En uygun teşvik programını seçer ve bütçeyi kurgularız.">En uygun teşvik programını seçer ve bütçeyi kurgularız.</p>
             </div>
-            <div>
-                <h3 data-en="BFR İNŞAAT GÜRKAN KAZANASMAZ" data-tr="BFR İNŞAAT GÜRKAN KAZANASMAZ">BFR İNŞAAT GÜRKAN KAZANASMAZ</h3>
-                <p data-en="Civil Engineer Intern (Jun 2019 - Sep 2019)" data-tr="İnşaat Mühendisi Stajyeri (Haziran 2019 - Eylül 2019)">Civil Engineer Intern (Jun 2019 - Sep 2019)</p>
-                <ul>
-                    <li data-en="Learned to recognize and use project-related computer programs like AutoCAD and MS Office." data-tr="AutoCAD ve MS Office gibi proje ile ilgili bilgisayar programlarını tanımayı ve kullanmayı öğrendi.">Learned to recognize and use project-related computer programs like AutoCAD and MS Office.</li>
-                    <li data-en="Ensured effective communication and coordination between the office and construction site." data-tr="Ofis ile inşaat sahası arasında etkili iletişim ve koordinasyonu sağladı.">Ensured effective communication and coordination between the office and construction site.</li>
-                </ul>
+            <div class="timeline-step">
+                <span>03</span>
+                <h3 data-en="Application Preparation" data-tr="Başvuru Hazırlığı">Başvuru Hazırlığı</h3>
+                <p data-en="We craft the application, documents, and technical narratives." data-tr="Başvuru dosyasını, belgeleri ve teknik anlatıyı hazırlarız.">Başvuru dosyasını, belgeleri ve teknik anlatıyı hazırlarız.</p>
+            </div>
+            <div class="timeline-step">
+                <span>04</span>
+                <h3 data-en="Follow-up & Reporting" data-tr="Takip & Raporlama">Takip & Raporlama</h3>
+                <p data-en="We track milestones, manage revisions, and support reporting." data-tr="Kilometre taşlarını takip eder, revizyonları yönetir ve raporlama desteği sağlarız.">Kilometre taşlarını takip eder, revizyonları yönetir ve raporlama desteği sağlarız.</p>
             </div>
         </div>
     </section>
-    <section id="education" class="container animate">
-        <h2 data-en="Education" data-tr="Eğitim">Education</h2>
-        <div class="education">
+
+    <section id="audiences" class="container alt-section animate">
+        <div class="section-title">
+            <h2 data-en="Who We Serve" data-tr="Kimlerle Çalışıyoruz">Kimlerle Çalışıyoruz</h2>
+            <p data-en="Focus on innovative companies and entrepreneurs who need structured incentive guidance." data-tr="Yapılandırılmış teşvik rehberliğine ihtiyaç duyan yenilikçi firmalara odaklanıyoruz.">Yapılandırılmış teşvik rehberliğine ihtiyaç duyan yenilikçi firmalara odaklanıyoruz.</p>
+        </div>
+        <div class="audience-grid">
             <div>
-                <h3 data-en="Işık University" data-tr="Işık Üniversitesi">Işık University</h3>
-                <p data-en="Bachelor of Science in Civil Engineering (Sep 2014 - Aug 2020)" data-tr="İnşaat Mühendisliği Lisans Derecesi (Eylül 2014 - Ağustos 2020)">Bachelor of Science in Civil Engineering (Sep 2014 - Aug 2020)</p>
-                <ul>
-                    <li data-en="Completed a finishing project focused on the design and analysis of steel structures in accordance with Turkish earthquake code." data-tr="Türk deprem yönetmeliğine uygun olarak çelik yapıların tasarımı ve analizi üzerine odaklanan bir bitirme projesini tamamladı.">Completed a finishing project focused on the design and analysis of steel structures in accordance with Turkish earthquake code.</li>
-                </ul>
+                <h3 data-en="R&D Companies" data-tr="Ar-Ge Yapan Firmalar">Ar-Ge Yapan Firmalar</h3>
+                <p data-en="Industrial, software, and hardware companies with innovation roadmaps." data-tr="Sanayi, yazılım ve donanım alanında inovasyon yol haritası olan firmalar.">Sanayi, yazılım ve donanım alanında inovasyon yol haritası olan firmalar.</p>
             </div>
             <div>
-                <h3 data-en="Istanbul University" data-tr="İstanbul Üniversitesi">Istanbul University</h3>
-                <p data-en="Master of Business Administration (Feb 2022 - Jul 2023)" data-tr="İşletme Yüksek Lisansı (Şubat 2022 - Temmuz 2023)">Master of Business Administration (Feb 2022 - Jul 2023)</p>
-                <ul>
-                    <li data-en="Conducted an analysis of the temporal variation of earthquakes greater than 5.0 MW in Turkey from 1900 to 2023." data-tr="1900-2023 yılları arasında Türkiye'de 5.0 MW'den büyük depremlerin zamansal değişimi üzerine bir analiz gerçekleştirdi.">Conducted an analysis of the temporal variation of earthquakes greater than 5.0 MW in Turkey from 1900 to 2023.</li>
-                </ul>
+                <h3 data-en="Young Entrepreneurs" data-tr="Genç Girişimciler">Genç Girişimciler</h3>
+                <p data-en="Startup founders looking for first-time funding and grant structuring." data-tr="İlk fonunu arayan girişimciler ve proje yapılandırması isteyen ekipler.">İlk fonunu arayan girişimciler ve proje yapılandırması isteyen ekipler.</p>
+            </div>
+            <div>
+                <h3 data-en="SMEs" data-tr="KOBİ'ler">KOBİ'ler</h3>
+                <p data-en="Growth-focused SMEs aiming to scale with incentives." data-tr="Teşviklerle büyümek isteyen KOBİ’ler.">Teşviklerle büyümek isteyen KOBİ’ler.</p>
             </div>
         </div>
     </section>
-    <section id="certificates" class="container animate">
-        <h2 data-en="Certificates" data-tr="Sertifikalar">Certificates</h2>
-        <div class="certificates">
-            <div>
-                <ul>
-                    <li data-en="Ar Academy Sap2000 Education Steel and Reinforced Concrete Structures Design and Analysis (Sep 2019 - Nov 2019)" data-tr="Ar Academy Sap2000 Eğitimi Çelik ve Betonarme Yapıların Tasarımı ve Analizi (Eylül 2019 - Kasım 2019)">Ar Academy Sap2000 Education Steel and Reinforced Concrete Structures Design and Analysis (Sep 2019 - Nov 2019)</li>
-                    <li data-en="AFAD Disaster Awareness Education (Oct 2021 - Nov 2021)" data-tr="AFAD Afet Farkındalık Eğitimi (Ekim 2021 - Kasım 2021)">AFAD Disaster Awareness Education (Oct 2021 - Nov 2021)</li>
-                    <li data-en="Certificate of Mindfulness Training (Oct 2021 - Feb 2022)" data-tr="Farkındalık Eğitimi Sertifikası (Ekim 2021 - Şubat 2022)">Certificate of Mindfulness Training (Oct 2021 - Feb 2022)</li>
-                </ul>
+
+    <section id="value" class="container animate">
+        <div class="section-title">
+            <h2 data-en="Why NB Consulting" data-tr="Neden NB Danışmanlık">Neden NB Danışmanlık</h2>
+            <p data-en="We turn complex incentive criteria into a clear and achievable roadmap." data-tr="Karmaşık teşvik kriterlerini net ve uygulanabilir bir yol haritasına dönüştürürüz.">Karmaşık teşvik kriterlerini net ve uygulanabilir bir yol haritasına dönüştürürüz.</p>
+        </div>
+        <div class="value-grid">
+            <div class="value-card">
+                <h3 data-en="Experienced Team" data-tr="Deneyimli Ekip">Deneyimli Ekip</h3>
+                <p data-en="Project managers and incentive specialists focused on measurable outcomes." data-tr="Ölçülebilir çıktılara odaklanan proje yöneticileri ve teşvik uzmanları.">Ölçülebilir çıktılara odaklanan proje yöneticileri ve teşvik uzmanları.</p>
             </div>
-            <div>
-                <ul>
-                    <li data-en="Udemy - Python and Programming, Django, Data Analysis (Jun 2023 - Oct 2023)" data-tr="Udemy - Python ve Programlama, Django, Veri Analizi (Haziran 2023 - Ekim 2023)">Udemy - Python and Programming, Django, Data Analysis (Jun 2023 - Oct 2023)</li>
-                    <li data-en="LinkedIn Learning - Excel Statistics Essential Training (Sep 2023 - Oct 2023)" data-tr="LinkedIn Learning - Excel İstatistikleri Temel Eğitimi (Eylül 2023 - Ekim 2023)">LinkedIn Learning - Excel Statistics Essential Training (Sep 2023 - Oct 2023)</li>
-                    <li data-en="PMI - Business Analysis Foundation (Sep 2023 - Oct 2023)" data-tr="PMI - İş Analizi Temel Eğitimi (Eylül 2023 - Ekim 2023)">PMI - Business Analysis Foundation (Sep 2023 - Oct 2023)</li>
-                </ul>
+            <div class="value-card">
+                <h3 data-en="Data-driven Planning" data-tr="Veri Odaklı Planlama">Veri Odaklı Planlama</h3>
+                <p data-en="We align KPIs, budget, and milestones with evaluation criteria." data-tr="KPI, bütçe ve kilometre taşlarını değerlendirme kriterleriyle uyumlarız.">KPI, bütçe ve kilometre taşlarını değerlendirme kriterleriyle uyumlarız.</p>
+            </div>
+            <div class="value-card">
+                <h3 data-en="Dedicated Communication" data-tr="Kesintisiz İletişim">Kesintisiz İletişim</h3>
+                <p data-en="Weekly check-ins, rapid updates, and clear documentation." data-tr="Haftalık takip, hızlı bilgilendirme ve net dokümantasyon.">Haftalık takip, hızlı bilgilendirme ve net dokümantasyon.</p>
             </div>
         </div>
     </section>
-    <section id="contact" class="container animate">
-        <h2 data-en="Contact" data-tr="İletişim">Contact</h2>
-        <div class="contact-info">
-            <div>
-                <p data-en="Email: egetezel95@gmail.com" data-tr="E-posta: egetezel95@gmail.com">Email: <a href="mailto:egetezel95@gmail.com">egetezel95@gmail.com</a></p>
+
+    <section id="contact" class="container alt-section animate">
+        <div class="section-title">
+            <h2 data-en="Contact Us" data-tr="İletişime Geçin">İletişime Geçin</h2>
+            <p data-en="Tell us about your project. We will return with a tailored incentive roadmap." data-tr="Projenizi anlatın, size özel teşvik yol haritasıyla dönüş yapalım.">Projenizi anlatın, size özel teşvik yol haritasıyla dönüş yapalım.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3 data-en="Reach Us" data-tr="Bize Ulaşın">Bize Ulaşın</h3>
+                <p data-en="Email: info@nbdanismanlik.com" data-tr="E-posta: info@nbdanismanlik.com">E-posta: <a href="mailto:info@nbdanismanlik.com">info@nbdanismanlik.com</a></p>
+                <p data-en="Phone: +90 5XX XXX XX XX" data-tr="Telefon: +90 5XX XXX XX XX">Telefon: +90 5XX XXX XX XX</p>
+                <p data-en="Location: Istanbul" data-tr="Konum: İstanbul">Konum: İstanbul</p>
+                <a class="whatsapp" href="https://wa.me/90" target="_blank" rel="noreferrer" data-en="WhatsApp Quick Contact" data-tr="WhatsApp Hızlı İletişim">WhatsApp Hızlı İletişim</a>
             </div>
-            <div>
-                <p data-en="Phone: +905353005892" data-tr="Telefon: +905353005892">Phone: +905353005892</p>
-            </div>
-            <div>
-                <p data-en="Location: Ümraniye/İstanbul" data-tr="Konum: Ümraniye/İstanbul">Location: Ümraniye/İstanbul</p>
-            </div>
-            <div>
-                <p><a href="https://www.linkedin.com/in/ege-tezel-59ba94161" data-en="LinkedIn Profile" data-tr="LinkedIn Profili">LinkedIn Profile</a></p>
-            </div>
+            <form class="contact-form" action="#" method="post">
+                <label>
+                    <span data-en="Full Name" data-tr="Ad Soyad">Ad Soyad</span>
+                    <input type="text" name="name" placeholder="Ad Soyad" required>
+                </label>
+                <label>
+                    <span data-en="Phone" data-tr="Telefon">Telefon</span>
+                    <input type="tel" name="phone" placeholder="05XX XXX XX XX" required>
+                </label>
+                <label>
+                    <span data-en="Email" data-tr="E-posta">E-posta</span>
+                    <input type="email" name="email" placeholder="info@" required>
+                </label>
+                <label>
+                    <span data-en="Project Summary" data-tr="Proje Özeti">Proje Özeti</span>
+                    <textarea name="message" rows="4" placeholder="Kısaca projenizi anlatın" required></textarea>
+                </label>
+                <button type="submit" class="primary" data-en="Send Request" data-tr="Talep Gönder">Talep Gönder</button>
+                <small data-en="By submitting, you consent to be contacted about your application." data-tr="Formu göndererek sizinle iletişime geçilmesini kabul etmiş olursunuz.">
+                    Formu göndererek sizinle iletişime geçilmesini kabul etmiş olursunuz.
+                </small>
+            </form>
         </div>
     </section>
+
     <footer>
-        <p data-en="&copy; 2024 Ege Tezel. All Rights Reserved." data-tr="&copy; 2024 Ege Tezel. Tüm Hakları Saklıdır.">&copy; 2024 Ege Tezel. All Rights Reserved.</p>
+        <p data-en="&copy; 2024 NB Consulting. All rights reserved." data-tr="&copy; 2024 NB Danışmanlık. Tüm hakları saklıdır.">&copy; 2024 NB Danışmanlık. Tüm hakları saklıdır.</p>
     </footer>
 </body>
 </html>
